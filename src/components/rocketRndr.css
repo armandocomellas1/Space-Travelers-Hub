@@ -1,0 +1,12 @@
+.bks_main_cont {
+  width: 100%;
+}
+
+.bks_main_cont .wikipedia {
+  background-image: url(../img//rockets/Thaicom.jpg);
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 100px;
+  height: 100px;
+}
