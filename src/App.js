@@ -9,6 +9,7 @@ import {
   NavLink,
 } from 'react-router-dom';
 import Rockets from './components/Rockets';
+import MyProfile from './components/MyProfile';
 
 const Navegation = () => (
   <div className="nav_main_cont">
@@ -56,6 +57,7 @@ function App() {
       <Navegation />
       <Routes>
         <Route path="/*" element={<Rockets />} />
+        <Route path="/myprofile" element={<MyProfile />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,0 +1,23 @@
+.profile_rockets {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 2%;
+}
+
+.profile_main {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 2%;
+}
+
+.profile_main .books_container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 2%;
+}
