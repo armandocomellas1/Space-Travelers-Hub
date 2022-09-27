@@ -6,17 +6,22 @@ const RocketsRender = (props) => {
   const dispatch = useDispatch();
   const {
     description,
-    mission_id,
-    mission_name,
+    id,
+    rocket_name,
+    flickr_images,
   } = props;
 
-  const setID = `${mission_id}`;
+  const setID = `${id}`;
+  const getFlickImg = flickr_images[0];
+  const styled = {
+    backgroundImage: `url(${getFlickImg})`,
+  };
 
   return (
     <div className="bks_main_cont" id={setID}>
-      <div className="wikipedia" />
+      <div style={styled} className="wikipedia" />
       <div className="books_container">
-        <div className="mission_name">{mission_name}</div>
+        <div className="mission_name">{rocket_name}</div>
         <div className="description">{description}</div>
         <div className="btn_missions_reserve">
           <button type="button">Reserve Rocket</button>

@@ -4,7 +4,7 @@ import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
 import loadingStatus from '../loadingStats';
 
-const urlBaseRockets = 'https://api.spacexdata.com/v3/missions';
+const urlBaseRockets = 'https://api.spacexdata.com/v3/rockets';
 const ACTION_PREPEND = 'SPACE/ROCKETS';
 
 export const fecthRockets = createAsyncThunk(ACTION_PREPEND, async () => {
