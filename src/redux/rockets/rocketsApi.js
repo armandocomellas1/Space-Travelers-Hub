@@ -35,6 +35,15 @@ const rocketsSlice = createSlice({
         }
       }
     },
+    cancelRocket: (state, action) => {
+      const getState = current(state).rockets;
+      for (let i = 0; i < getState.length; i += 1) {
+        if (getState[i].id === Number(action.payload)) {
+          // state.rockets.rocket = true;
+          state.rockets[i].reserve = false;
+        }
+      }
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -50,6 +59,6 @@ const rocketsSlice = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const { updateRocket, storeRockets } = rocketsSlice.actions;
+export const { updateRocket, cancelRocket } = rocketsSlice.actions;
 
 export default rocketsSlice.reducer;

@@ -1,7 +1,7 @@
 import './rocketRndr.css';
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { updateRocket, storeRockets } from '../redux/rockets/rocketsApi';
+import { updateRocket, cancelRocket } from '../redux/rockets/rocketsApi';
 
 const RocketsRender = (props) => {
   const dispatch = useDispatch();
@@ -21,8 +21,21 @@ const RocketsRender = (props) => {
   const checkReserve = reserve;
   const reserveRock = (event) => {
     const getId = event.target.parentElement.parentElement.parentElement.id;
-    dispatch(updateRocket(getId));
+    const getBtnStatus = event.target.className;
+    if (getBtnStatus === 'cancel_style') {
+      dispatch(cancelRocket(getId));
+    } else {
+      dispatch(updateRocket(getId));
+    }
   };
+
+  let buttonStatus;
+
+  if (checkReserve === true) {
+    buttonStatus = 'Cancel Reservation';
+  } else {
+    buttonStatus = 'Reserve Rocket';
+  }
 
   return (
     <div className="bks_main_cont" id={setID}>
@@ -34,7 +47,7 @@ const RocketsRender = (props) => {
           {description}
         </div>
         <div className="btn_missions_reserve">
-          <button type="button" onClick={reserveRock}>Reserve Rocket</button>
+          <button className={checkReserve === true ? 'cancel_style' : 'reserve_style'} type="button" onClick={reserveRock}>{buttonStatus}</button>
         </div>
       </div>
     </div>
