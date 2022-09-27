@@ -16,9 +16,11 @@ const RocketsRender = (props) => {
     <div className="bks_main_cont" id={setID}>
       <div className="wikipedia" />
       <div className="books_container">
-        <div className="description">{description}</div>
-        <div className="mission_id">{mission_id}</div>
         <div className="mission_name">{mission_name}</div>
+        <div className="description">{description}</div>
+        <div className="btn_missions_reserve">
+          <button type="button">Reserve Rocket</button>
+        </div>
       </div>
     </div>
   );
