@@ -13,15 +13,15 @@ import Rockets from './components/Rockets';
 const Navegation = () => (
   <div className="nav_main_cont">
     <div className="nav_container">
-      <div>
+      <div className="menu_container">
+        <div className="menu_img" />
         <h1>Space Traveler&apos;s Hub</h1>
       </div>
-      <nav>
+      <nav className="nav_menu">
         <NavLink
           to="/rockets"
           style={({ isActive }) => ({
-            color: isActive ? 'red' : 'blue',
-            textDecoration: isActive ? 'underline' : 'none',
+            textDecoration: isActive ? 'underline 2px' : 'none',
           })}
         >
           Rockets
@@ -29,8 +29,7 @@ const Navegation = () => (
         <NavLink
           to="/missions"
           style={({ isActive }) => ({
-            color: isActive ? 'red' : 'blue',
-            textDecoration: isActive ? 'underline' : 'none',
+            textDecoration: isActive ? 'underline 2px' : 'none',
           })}
         >
           Missions
@@ -38,13 +37,15 @@ const Navegation = () => (
         <NavLink
           to="/myprofile"
           style={({ isActive }) => ({
-            color: isActive ? 'red' : 'blue',
-            textDecoration: isActive ? 'underline' : 'none',
+            textDecoration: isActive ? 'underline 2px' : 'none',
           })}
         >
           My Profile
         </NavLink>
       </nav>
+    </div>
+    <div className="line_menu">
+      <hr />
     </div>
   </div>
 );
