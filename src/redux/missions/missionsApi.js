@@ -2,9 +2,12 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 const baseURL = 'https://api.spacexdata.com/v3/missions';
-const initialState = [];
+const initialState = {
+  missions: [],
+  status: 'IDLE',
+};
 
- export const fetchMissions = createAsyncThunk(
+export const fetchMissions = createAsyncThunk(
  'missions/getMission',
  async () => {
    const response = await fetch(baseURL);
@@ -19,7 +22,7 @@ const initialState = [];
  },
 );
 
-export const missionsSlice = createSlice({
+const missionsSlice = createSlice({
   name: 'missions',
   initialState,
   reducers: {
@@ -29,11 +32,15 @@ export const missionsSlice = createSlice({
       }
       return { ...mission, reserved: !mission.reserved };
     }),
+    cancelMissions: (state, action) => state.map((mission) => {
+      // Nothign for now
+    }),
   },
   extraReducers: (builder) => {
     builder.addCase(fetchMissions.fulfilled, (state, action) => action.payload);
   },
 });
 
-export const { reserveMission } = missionsSlice.actions;
+export const { reserveMission, cancelMissions } = missionsSlice.actions;
+
 export default missionsSlice.reducer;

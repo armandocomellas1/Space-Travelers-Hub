@@ -3,16 +3,19 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchMissions } from '../redux/missions/missionsApi';
 import MissionRender from './missonRndr';
 import '../App.css';
+import loadingStatus from '../redux/loadingStats';
+import RocketsRender from './RocketRender';
 
 const Missions = () => {
-  const missions = useSelector((state) => state.mission);
   const dispatch = useDispatch();
-
+  const loading = useSelector((store) => store.missions.status);
+  const missions = useSelector((state) => state.missions);
   useEffect(() => {
-    if (!missions?.length) {
+    if (loading === loadingStatus.idle) {
       dispatch(fetchMissions());
     }
-  }, []);
+  }, [dispatch, loading]);
+
   return (
     <div className="missions-page">
       <table>

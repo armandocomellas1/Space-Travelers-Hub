@@ -16,7 +16,6 @@ const Rockets = () => {
   }, [dispatch, loading]);
 
   if (rockets.status === 'SUCCEEDED') {
-    console.log('rockets', rockets);
     const rocketsAll = rockets.rockets;
     return (
       <div>

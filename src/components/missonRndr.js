@@ -6,6 +6,8 @@ import '../App.css';
 const MissionRender = (props) => {
   const dispatch = useDispatch();
   const { mission } = props;
+  console.log('mission', mission);
+
   return (
     <tr>
       <td className="name">{mission.mission_name}</td>
