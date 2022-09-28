@@ -3,21 +3,24 @@
   flex-direction: column;
   padding-left: 5%;
   padding-right: 5%;
-  margin-bottom: 2%;
+  margin-bottom: 0.5%;
 }
 
 .profile_main {
   display: flex;
   flex-direction: column;
-  padding-left: 5%;
-  padding-right: 5%;
-  margin-bottom: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 2px solid rgb(223, 223, 223);
+  border-radius: 5px;
+  width: 50%;
 }
 
-.profile_main .books_container {
+.profile_main .rockets_container {
+  height: 70px;
+  border-bottom: 2px solid rgb(223, 223, 223);
+}
+
+.profile_main .rockets_container .rocket_named {
   display: flex;
-  flex-direction: column;
-  padding-left: 5%;
-  padding-right: 5%;
-  margin-bottom: 2%;
 }
