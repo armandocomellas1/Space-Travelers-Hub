@@ -9,12 +9,8 @@ const MyProfile = () => {
   const dispatch = useDispatch();
   const rockets = useSelector((state) => state.rockets);
   const missions = useSelector((state) => state.missions);
-  console.log('rockets', rockets);
-  console.log('missions', missions);
 
   if (rockets.status === 'SUCCEEDED' || missions.status === 'SUCCEEDED') {
-    console.log('rockets_missions');
-
     const rocketsAll = rockets.rockets;
     const missionsAll = missions.missions;
 

@@ -14,17 +14,6 @@ tbody tr:nth-child(odd) {
   background-color: rgb(242, 242, 242);
 }
 
-.leave-mission {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  background-color: white;
-  width: 90px;
-  padding: 0.3rem;
-  border: 1.5px solid #919191;
-  border-radius: 0.15rem;
-  margin: 1rem;
-}
-
 tr th {
   text-align: start;
   padding-left: 1%;
@@ -88,17 +77,6 @@ tr > td:nth-child(3) {
 
 tr > td:nth-child(4) {
   width: 11%;
-}
-
-.active-member {
-  display: inline-block;
-  width: 90px;
-  margin: 0.8rem;
-  color: white;
-  font-size: 12px;
-  font-weight: 700;
-  text-align: center;
-  border-radius: 0.15rem;
 }
 
 .not-member {
