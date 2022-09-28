@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { reserveMission } from '../redux/missions/missionsApi';
 import '../App.css';
 
-const MissionItem = (props) => {
+const MissionRender = (props) => {
   const dispatch = useDispatch();
   const { mission } = props;
   return (
@@ -28,7 +28,7 @@ const MissionItem = (props) => {
   );
 };
 
-MissionItem.propTypes = {
+MissionRender.propTypes = {
   mission: PropTypes.shape(
     {
       mission_id: PropTypes.string,
@@ -38,4 +38,4 @@ MissionItem.propTypes = {
     },
   ).isRequired,
 };
-export default MissionItem;
+export default MissionRender;
