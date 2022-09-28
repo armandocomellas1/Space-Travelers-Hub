@@ -20,19 +20,21 @@ const MyProfile = () => {
     return (
       <div>
         <h2 className="profile_rockets">My Rockets</h2>
-        {
-          rocketsAll.map((rocket) => {
-            if (rocket.reserve === true) {
-              return (
-                <ProfileRockets
-                  key={`books-lisk-card-${rocket.id}`}
-                  {...rocket}
-                />
-              );
-            }
-            return false;
-          })
-        }
+        <div className="profile_main">
+          {
+            rocketsAll.map((rocket) => {
+              if (rocket.reserve === true) {
+                return (
+                  <ProfileRockets
+                    key={`books-lisk-card-${rocket.id}`}
+                    {...rocket}
+                  />
+                );
+              }
+              return false;
+            })
+          }
+        </div>
       </div>
     );
   }

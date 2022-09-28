@@ -20,10 +20,8 @@ const ProfileRockets = (props) => {
   };
 
   return (
-    <div className="profile_main" id={setID}>
-      <div className="rockets_container">
-        <div className="rocket_named">{rocket_name}</div>
-      </div>
+    <div className="rockets_container" id={setID}>
+      <div className="rocket_named">{rocket_name}</div>
     </div>
   );
 };
