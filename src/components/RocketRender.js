@@ -42,7 +42,7 @@ const RocketsRender = (props) => {
       <div style={styled} className="wikipedia" />
       <div className="books_container">
         <div className="mission_name">{rocket_name}</div>
-        <div className="description">
+        <div className="description_rockets">
           <span className={checkReserve === true ? 'reserve_word' : ''} />
           {description}
         </div>

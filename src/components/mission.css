@@ -1,0 +1,192 @@
+.missions-page {
+  display: flex;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 2%;
+}
+
+table {
+  border: 1px solid #aca9a970;
+  border-collapse: collapse;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgb(242, 242, 242);
+}
+
+.leave-mission {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  background-color: white;
+  width: 90px;
+  padding: 0.3rem;
+  border: 1.5px solid #919191;
+  border-radius: 0.15rem;
+  margin: 1rem;
+}
+
+tr th {
+  text-align: start;
+  padding-left: 1%;
+  height: 50px;
+  font-size: 1.5rem;
+  border: 1px solid #808080;
+}
+
+.missions-page table thead tr > th:nth-child(1) {
+  width: 11%;
+}
+
+.missions-page table thead tr > th:nth-child(2) {
+  width: 60%;
+}
+
+.missions-page table thead tr > th:nth-child(3) {
+  width: 11%;
+}
+
+.missions-page table thead tr > th:nth-child(4) {
+  width: 14%;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding-left: 1%;
+  padding-top: 0.5%;
+  text-align: start;
+  vertical-align: top;
+}
+
+.description {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+  word-spacing: 1px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+td {
+  border-collapse: collapse;
+  border: 2px solid rgb(222, 226, 230);
+}
+
+tr > td:nth-child(1) {
+  width: 11%;
+}
+
+tr > td:nth-child(2) {
+  width: 49%;
+}
+
+tr > td:nth-child(3) {
+  width: 8%;
+}
+
+tr > td:nth-child(4) {
+  width: 11%;
+}
+
+.active-member {
+  display: inline-block;
+  width: 90px;
+  margin: 0.8rem;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 0.15rem;
+}
+
+.not-member {
+  background-color: rgb(109, 117, 125);
+  color: rgb(253, 253, 253);
+  font-weight: 500;
+  display: flex;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  height: 24px;
+}
+
+.join {
+  display: flex;
+  border: 1px solid rgb(52, 58, 64);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgb(86, 90, 94);
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.join:hover {
+  cursor: pointer;
+  background-color: #72c592;
+}
+
+.active-member {
+  background-color: rgb(24, 162, 184);
+  color: rgb(253, 253, 253);
+  font-weight: 500;
+  display: flex;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  height: 24px;
+}
+
+.leave-mission {
+  display: flex;
+  border: 1px solid rgb(52, 58, 64);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgb(246, 204, 208);
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.leave-mission:hover {
+  cursor: pointer;
+  background-color: #cdccef;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .missions-page {
+    display: unset;
+  }
+
+  th {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
+
+.titleDesc {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}

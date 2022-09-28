@@ -1,4 +1,4 @@
-import '../App.css';
+import './mission.css';
 import { useSelector, useDispatch } from 'react-redux';
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
