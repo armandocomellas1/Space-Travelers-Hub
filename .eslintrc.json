@@ -30,7 +30,9 @@
     "no-param-reassign": "off",
     "camelcase": "off",
     "max-len": "off",
-    "no-shadow": "off"
+    "no-shadow": "off",
+    "linebreak-style": "off",
+    "indent": "off"
   },
   "ignorePatterns": [
     "dist/",
