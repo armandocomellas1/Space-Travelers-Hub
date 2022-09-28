@@ -1,23 +1,30 @@
-.profile_rockets {
+.container_profiles {
   display: flex;
-  flex-direction: column;
-  padding-left: 5%;
-  padding-right: 5%;
-  margin-bottom: 0.5%;
+  justify-content: space-between;
+  padding-left: 6.5%;
+  padding-right: 6.5%;
+  margin-bottom: 2%;
 }
 
-.profile_main {
+.container_profiles .container_left {
   display: flex;
   flex-direction: column;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 47%;
+}
+
+.container_profiles .container_left .profile_rockets {
+  margin-bottom: 1.5%;
+}
+
+.container_profiles .container_left .profile_main {
+  display: flex;
+  flex-direction: column;
   border: 2px solid rgb(223, 223, 223);
   border-width: 2px 2px 0 2px;
   border-radius: 5px;
-  width: 50%;
 }
 
-.profile_main .rockets_container {
+.container_profiles .container_left .profile_main .rockets_container {
   height: 70px;
   border-bottom: 2px solid rgb(223, 223, 223);
   display: flex;
@@ -25,7 +32,39 @@
   padding-left: 2%;
 }
 
-.profile_main .rockets_container .rocket_named {
+.container_profiles .container_left .profile_main .rockets_container .rocket_named {
   font-weight: 500;
   font-size: 1.2rem;
 }
+
+.container_profiles .container_right {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+}
+
+.container_profiles .container_right .profile_missions {
+  margin-bottom: 1.5%;
+}
+
+.container_profiles .container_right .profile_main_miss {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(223, 223, 223);
+  border-width: 2px 2px 0 2px;
+  border-radius: 5px;
+}
+
+.container_profiles .container_right .profile_main_miss .missions_container {
+  height: 70px;
+  border-bottom: 2px solid rgb(223, 223, 223);
+  display: flex;
+  align-items: center;
+  padding-left: 2%;
+}
+
+.container_profiles .container_right .profile_main_miss .missions_container .mission_named {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
