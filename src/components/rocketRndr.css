@@ -27,14 +27,14 @@
   font-weight: 500;
 }
 
-.bks_main_cont .books_container .description {
+.bks_main_cont .books_container .description_rockets {
   color: rgba(46, 50, 53, 0.863);
   margin-top: 1%;
   font-size: 1.2rem;
   font-weight: 500;
 }
 
-.bks_main_cont .books_container .description .reserve_word::after {
+.bks_main_cont .books_container .description_rockets .reserve_word::after {
   content: 'Reserved';
   background-color: rgb(24, 162, 184);
   color: rgb(255, 255, 242);

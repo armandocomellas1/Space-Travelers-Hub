@@ -1,28 +1,39 @@
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { reserveMission } from '../redux/missions/missionsApi';
-import '../App.css';
+import './mission.css';
+import { reserveMission, cancelMissions } from '../redux/missions/missionsApi';
 
 const MissionRender = (props) => {
   const dispatch = useDispatch();
   const { mission } = props;
 
+  const listenReserve = (event) => {
+    const getId = event.target.parentElement.parentElement.id;
+    const getBtnStatus = event.target.className;
+
+    if (getBtnStatus === 'leave-mission') {
+      dispatch(cancelMissions(getId));
+    } else {
+      dispatch(reserveMission(getId));
+    }
+  };
+
   return (
-    <tr>
+    <tr id={mission.mission_id}>
       <td className="name">{mission.mission_name}</td>
       <td className="description">{mission.description}</td>
       <td>
-        <span className={mission.reserved ? 'active-member' : 'not-member'}>
-          {mission.reserved ? 'Active Member' : 'Not A Member'}
+        <span className={mission.reserve ? 'active-member' : 'not-member'}>
+          {mission.reserve ? 'Active Member' : 'NOT A MEMBER'}
         </span>
       </td>
       <td>
         <button
-          className={mission.reserved ? 'leave-mission' : 'join'}
+          className={mission.reserve ? 'leave-mission' : 'join'}
           type="button"
-          onClick={() => dispatch(reserveMission({ mission }))}
+          onClick={listenReserve}
         >
-          {mission.reserved ? 'Cancel Mission' : 'Join Mission' }
+          {mission.reserve ? 'Cancel Mission' : 'Join Mission' }
         </button>
       </td>
     </tr>

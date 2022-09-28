@@ -25,7 +25,7 @@ const missionsSlice = createSlice({
     reserveMission: (state, action) => {
       const getState = current(state).missions;
       for (let i = 0; i < getState.length; i += 1) {
-        if (getState[i].id === Number(action.payload)) {
+        if (getState[i].mission_id === action.payload) {
           // state.rockets.rocket = true;
           state.missions[i].reserve = true;
         }
@@ -34,7 +34,7 @@ const missionsSlice = createSlice({
     cancelMissions: (state, action) => {
       const getState = current(state).missions;
       for (let i = 0; i < getState.length; i += 1) {
-        if (getState[i].id === Number(action.payload)) {
+        if (getState[i].mission_id === action.payload) {
           // state.rockets.rocket = true;
           state.missions[i].reserve = false;
         }
