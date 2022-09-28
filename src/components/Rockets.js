@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import axios from 'axios';
-import { fecthRockets, validate } from '../redux/rockets/rocketsApi';
+import { fecthRockets } from '../redux/rockets/rocketsApi';
 import loadingStatus from '../redux/loadingStats';
 import RocketsRender from './RocketRender';
 
@@ -16,7 +16,6 @@ const Rockets = () => {
   }, [dispatch, loading]);
 
   if (rockets.status === 'SUCCEEDED') {
-    console.log('rockets', rockets);
     const rocketsAll = rockets.rockets;
     return (
       <div>
@@ -24,7 +23,7 @@ const Rockets = () => {
           rocketsAll.map((rocket) => {
             return (
               <RocketsRender
-                key={`books-lisk-card-${rocket.mission_id}`}
+                key={`books-lisk-card-${rocket.id}`}
                 {...rocket}
               />
             );

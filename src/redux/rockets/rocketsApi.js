@@ -1,10 +1,10 @@
-import { createAsyncThunk, nanoid, createSlice } from '@reduxjs/toolkit';
+import { createAsyncThunk, createSlice, current } from '@reduxjs/toolkit';
 import { keys } from 'lodash';
 import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
 import loadingStatus from '../loadingStats';
 
-const urlBaseRockets = 'https://api.spacexdata.com/v3/missions';
+const urlBaseRockets = 'https://api.spacexdata.com/v3/rockets';
 const ACTION_PREPEND = 'SPACE/ROCKETS';
 
 export const fecthRockets = createAsyncThunk(ACTION_PREPEND, async () => {
@@ -26,7 +26,24 @@ const rocketsSlice = createSlice({
   name: ACTION_PREPEND,
   initialState,
   reducers: {
-    // omit reducer cases
+    updateRocket: (state, action) => {
+      const getState = current(state).rockets;
+      for (let i = 0; i < getState.length; i += 1) {
+        if (getState[i].id === Number(action.payload)) {
+          // state.rockets.rocket = true;
+          state.rockets[i].reserve = true;
+        }
+      }
+    },
+    cancelRocket: (state, action) => {
+      const getState = current(state).rockets;
+      for (let i = 0; i < getState.length; i += 1) {
+        if (getState[i].id === Number(action.payload)) {
+          // state.rockets.rocket = true;
+          state.rockets[i].reserve = false;
+        }
+      }
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -42,6 +59,6 @@ const rocketsSlice = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const { validate, decrement } = rocketsSlice.actions;
+export const { updateRocket, cancelRocket } = rocketsSlice.actions;
 
 export default rocketsSlice.reducer;
