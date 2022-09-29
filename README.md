@@ -27,7 +27,7 @@ If you want to clone this project:
 
 ## Live demo video (Netlify deployment) you click here:
 
-[live server](https://wondrous-haupia-b08e13.netlify.app/)
+[live server](https://bejewelled-torrone-3c473f.netlify.app/)
 
 ## Available Scripts
 
