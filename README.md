@@ -26,7 +26,7 @@ If you want to clone this project:
 - On your local machine, type the command git clone and paste the SSH link
 
 ## Live demo video (Netlify deployment)
-- The project live demo will be share once its approved.![](https://img.shields.io/badge/Microverse-blueviolet)
+[](https://6335d34e40fc5e1526c620b0--wondrous-haupia-b08e13.netlify.app/rockets)
 
 ## Available Scripts
 
