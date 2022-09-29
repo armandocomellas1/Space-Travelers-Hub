@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import './profileStyle.css';
 import axios from 'axios';
 import ProfileRockets from './MyProfrender';
-import ProfileMissions from './MyprofRock';
+import ProfileMissions from './Myprofmission';
 
 const MyProfile = () => {
   const dispatch = useDispatch();
