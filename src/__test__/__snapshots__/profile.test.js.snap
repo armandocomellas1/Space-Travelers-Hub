@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test if MyProfile page works correctly renders correctly 1`] = `null`;
+
+exports[`test if profile page works correctly renders correctly 1`] = `
+<div
+  className="container_profiles"
+>
+  <div
+    className="container_left"
+  >
+    <h2>
+      My Rockets
+    </h2>
+    <div
+      className="profile_main"
+    >
+      <p>
+        You haven't  any rocket yet.
+      </p>
+    </div>
+  </div>
+  <div
+    className="container_right"
+  >
+    <h2>
+      My Missions
+    </h2>
+    <div
+      className="profile_main_miss"
+    >
+      <p>
+        You haven't joined any missions yet.
+      </p>
+    </div>
+  </div>
+</div>
+`;
