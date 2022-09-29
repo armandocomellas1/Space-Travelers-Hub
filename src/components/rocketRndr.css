@@ -1,0 +1,83 @@
+.bks_main_cont {
+  display: flex;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 2%;
+}
+
+.bks_main_cont .wikipedia {
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 450px;
+  height: 240px;
+}
+
+.bks_main_cont .books_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 2%;
+}
+
+.bks_main_cont .books_container .mission_name {
+  color: rgb(33, 37, 41);
+  text-transform: capitalize;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.bks_main_cont .books_container .description_rockets {
+  color: rgba(46, 50, 53, 0.863);
+  margin-top: 1%;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.bks_main_cont .books_container .description_rockets .reserve_word::after {
+  content: 'Reserved';
+  background-color: rgb(24, 162, 184);
+  color: rgb(255, 255, 242);
+  font-size: 0.9rem;
+  border-radius: 5px;
+  margin-right: 1.5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 0.1%;
+  text-align: center;
+  vertical-align: middle;
+  letter-spacing: 1px;
+}
+
+.bks_main_cont .books_container .btn_missions_reserve {
+  margin-top: 2%;
+}
+
+.bks_main_cont .books_container .btn_missions_reserve .reserve_style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 123, 255);
+  color: rgba(255, 255, 255, 0.918);
+  border: none;
+  border-radius: 5px;
+  width: 17%;
+  height: 50px;
+  font-size: 1.2rem;
+  font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.bks_main_cont .books_container .btn_missions_reserve .cancel_style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(112, 120, 128);
+  border-radius: 5px;
+  border: 1px solid rgb(109, 117, 125);
+  width: 23%;
+  height: 50px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
