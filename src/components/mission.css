@@ -10,16 +10,20 @@ table {
   border-collapse: collapse;
 }
 
-tbody tr:nth-child(odd) {
-  background-color: rgb(242, 242, 242);
-}
-
 tr th {
   text-align: start;
   padding-left: 1%;
   height: 50px;
   font-size: 1.5rem;
   border: 1px solid #808080;
+}
+
+.missions-page table thead tr > th {
+  border: 2px solid #aca9a970;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgb(242, 242, 242);
 }
 
 .missions-page table thead tr > th:nth-child(1) {
