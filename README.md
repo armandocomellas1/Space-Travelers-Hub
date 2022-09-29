@@ -83,11 +83,11 @@ If you want to clone this project:
 - LinkedIn: [@armandoComellasd](https://www.linkedin.com/in/armando-comellas-mayo-a8a8b8b6/)
 
 ## Author2
-👤 Tamana Balkhi
+👤 **Tamana Balkhi**
 
-GitHub: [@tamana-Balkhi](https://github.com/tamana-Balkhi)
-Twitter:[@TAMANA1377](https://twitter.com/TAMANA1377)
-LinkedIn:[Tamana balkhi](https://www.linkedin.com/in/tamana-balkhi-1212171b6/)
+- GitHub: [@tamana-Balkhi](https://github.com/tamana-Balkhi)
+- Twitter:[@TAMANA1377](https://twitter.com/TAMANA1377)
+- LinkedIn:[Tamana balkhi](https://www.linkedin.com/in/tamana-balkhi-1212171b6/)
 
 ## Authors notice
 - Thank you @tamana for helping in this project we were working together according the instructions.
