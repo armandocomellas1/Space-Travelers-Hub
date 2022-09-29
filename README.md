@@ -9,9 +9,9 @@ Redux
 CSS
 linters
 
-#Live-Demo
+# Live-Demo
 [not available yet]()
-Capture9.PNG
+
 
 ## Getting Started
 
@@ -48,7 +48,8 @@ You may also see any lint errors in the console.
 
 GitHub: [@armandocomellas1](https://github.com/armandocomellas1)
 Twitter: [ArmandoCMon](https://twitter.com/ArmandoCMon)
-
+ 
+## Author2
 👤 Tamana Balkhi
 
 GitHub: [@tamana-Balkhi](https://github.com/tamana-Balkhi)
