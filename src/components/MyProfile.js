@@ -19,37 +19,23 @@ const MyProfile = () => {
         <div className="container_left">
           <h2 className="profile_rockets">My Rockets</h2>
           <div className="profile_main">
-            {
-              rocketsAll.map((rocket) => {
-                if (rocket.reserve === true) {
-                  return (
-                    <ProfileRockets
-                      key={`books-lisk-card-${rocket.id}`}
-                      {...rocket}
-                    />
-                  );
-                }
-                return false;
-              })
-            }
+            {rocketsAll.filter((rocket) => rocket.reserve !== undefined).map((rocketFiltered) => (
+              <ProfileRockets
+                key={`books-lisk-card-${rocketFiltered.id}`}
+                {...rocketFiltered}
+              />
+            ))}
           </div>
         </div>
         <div className="container_right">
           <h2 className="profile_missions">My Missions</h2>
           <div className="profile_main_miss">
-            {
-              missionsAll.map((mission) => {
-                if (mission.reserve === true) {
-                  return (
-                    <ProfileMissions
-                      key={`books-lisk-card-${mission.mission_id}`}
-                      {...mission}
-                    />
-                  );
-                }
-                return false;
-              })
-            }
+            {missionsAll.filter((mission) => mission.reserve !== undefined).map((missionFiltered) => (
+              <ProfileMissions
+                key={`books-lisk-card-${missionFiltered.mission_id}`}
+                {...missionFiltered}
+              />
+            ))}
           </div>
         </div>
       </div>
