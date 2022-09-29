@@ -10,6 +10,10 @@ table {
   border-collapse: collapse;
 }
 
+.missions-page table thead tr > th {
+  border: 2px solid #aca9a970;
+}
+
 tbody tr:nth-child(odd) {
   background-color: rgb(242, 242, 242);
 }
