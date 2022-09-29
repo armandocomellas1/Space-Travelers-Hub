@@ -28,10 +28,6 @@ If you want to clone this project:
 ## Live demo video (Netlify deployment)
 - The project live demo will be share once its approved.![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Bookstore: connect to API
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 - HTML5.
