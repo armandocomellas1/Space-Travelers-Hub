@@ -1,5 +1,4 @@
-import { useSelector, useDispatch } from 'react-redux';
-import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
 import './mission.css';
 import { reserveMission, cancelMissions } from '../redux/missions/missionsApi';
 
