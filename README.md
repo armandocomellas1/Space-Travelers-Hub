@@ -27,7 +27,7 @@ If you want to clone this project:
 
 ## Live demo video (Netlify deployment) you click here:
 
-![](https://6335d34e40fc5e1526c620b0--wondrous-haupia-b08e13.netlify.app/rockets)
+[live server](https://6335d34e40fc5e1526c620b0--wondrous-haupia-b08e13.netlify.app/rockets)
 
 ## Available Scripts
 
