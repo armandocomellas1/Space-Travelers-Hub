@@ -6,7 +6,7 @@ exports[`renders correctly 1`] = `
 <div
   className="bks_main_cont""
 >
-  <ul
+  <div
     className="books_container"
   />
 </div>
@@ -16,7 +16,7 @@ exports[`test if rockets page works correctly renders correctly 1`] = `
 <div
   className="bks_main_cont""
 >
-  <ul
+  <div
     className="books_container"
   />
 </div>
