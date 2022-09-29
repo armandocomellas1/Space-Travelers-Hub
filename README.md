@@ -20,10 +20,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Getting Started with Create React App
 
 If you want to clone this project:
-- Go to GitHub repository
-- Click on the green button that say 'Code'
-- Copy the SSH link
-- On your local machine, type the command git clone and paste the SSH link
+- Go to GitHub repository.
+- Click on the green button that say 'Code'.
+- Copy the SSH link.
+- On your local machine, type the command git clone and paste the SSH link.
 
 ## Live demo video (Netlify deployment) you click here:
 
