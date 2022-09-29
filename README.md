@@ -25,7 +25,8 @@ If you want to clone this project:
 - Copy the SSH link
 - On your local machine, type the command git clone and paste the SSH link
 
-## Live demo video (Netlify deployment)
+## Live demo video (Netlify deployment) you click here:
+
 [](https://6335d34e40fc5e1526c620b0--wondrous-haupia-b08e13.netlify.app/rockets)
 
 ## Available Scripts
