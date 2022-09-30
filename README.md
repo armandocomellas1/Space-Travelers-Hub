@@ -27,7 +27,7 @@ If you want to clone this project:
 
 ## Live demo video (Netlify deployment) you click here:
 
-[live server](https://bejewelled-torrone-3c473f.netlify.app/)
+[live server](https://neon-tapioca-8259d3.netlify.app/)
 
 ## Available Scripts
 
